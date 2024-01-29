@@ -1,0 +1,36 @@
+/* GENERAL */
+
+* {
+    margin:0;
+}
+
+a {
+    text-decoration: none;
+}
+/* -- Colors */ 
+
+:root {
+    --white-color: #ffff;
+    --seafoam-green:#30cd8a;
+}
+
+/* -- Fonts */
+
+.btn {
+    background-color: var(--seafoam-green);
+    font-family: "Open-Sans";
+    color:var(--white-color);
+    font-size: 16px;
+    font-weight: 600;
+    fill: var(--white-color);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 13px 30px;
+}
+
+/* HEADER */
+/* MAIN */
+/* FOOTER */
+
+/* RESPONSIVE */
