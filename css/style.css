@@ -1,5 +1,13 @@
 /* GENERAL */
 
+
+/* -- Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+
+/* Global CSS settings */
+
 * {
     margin:0;
 }
@@ -7,30 +15,68 @@
 a {
     text-decoration: none;
 }
-/* -- Colors */ 
+/* -- Root CSS variables */ 
 
 :root {
+    /* colors */
     --white-color: #ffff;
+    --black-color: #000000;
     --seafoam-green:#30cd8a;
-}
+    --magenta-desk:#423b73;
+    --background-blue: #1e1d31;
+    --highlight-red:#E34E67;
+    /* fonts */
+    --font-Open-Sans: 'Open Sans', sans-serif;
 
-/* -- Fonts */
-
-.btn {
-    background-color: var(--seafoam-green);
-    font-family: "Open-Sans";
-    color:var(--white-color);
-    font-size: 16px;
-    font-weight: 600;
-    fill: var(--white-color);
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 13px 30px;
 }
 
 /* HEADER */
-/* MAIN */
-/* FOOTER */
 
-/* RESPONSIVE */
+header{
+    max-width: 1440px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 15px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header img{
+    width:200px;
+}
+
+header a{
+    font-family: var(--font-Open-Sans);
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.2s;
+}
+
+header a:hover{
+    color:var(--seafoam-green);
+    transition: all 0.2s;
+}
+
+header nav ul li:nth-child(1) a:nth-child(1) {
+    color:var(--seafoam-green);
+}
+
+header nav ul li:nth-child(4) a:nth-child(1) {
+    color:var(--highlight-red);
+}
+
+header nav ul li:nth-child(1) a:nth-child(1):hover {
+    opacity: 0.5;
+    transition: all 0.2s;
+}
+
+header nav ul li:nth-child(4) a:nth-child(1):hover {
+    color:var(--seafoam-green);
+    transition: all 0.2s;
+}

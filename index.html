@@ -1,113 +1,167 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/03_LP_ALC_Projects/02/09_Skillfacile_28012024/css/style.css">
-    <title>Skillfacile</title>
-</head>
-<body>
-    <header>
-        <img src="/03_LP_ALC_Projects/02/09_Skillfacile_28012024/images/logo-noir.webp" href="/">
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
-        <!-- 
-            - Lste 2col:
-                OK -- Logo
-                -- Menu nav 5col 
-                    --- nth:child 4 rouge item de la liste , vert si activé/survol
-                    --- Item 2 = dropdown menu
-        -->
-    </header>
-    <main>
-        <!-- 
-            - Section 1:
-                -- 2 col
-                -- 1 col = 
-                    --- h1 titre + sous tire DESSUS avec font
-                    --- p
-                    --- liste col x2 avec bouttons stylisé (class)
-            - Section 2:
-                -- List x2 col:
-                    --- Composant: x2  col
-                        ---- img align/jsutify center
-                        ---- h2/h3 + p
-                    --- x4 reparti en 2col repeat 1fr
-                -- Boutton Contact stylisé class btn align ce ter (margin ? amargin auto)
-            - Section 3:
-                -- Article 1: text align center on all article
-                    --- p or h3
-                    --- h2
-                    --- p
-                -- Article 2: x2 colo grid align
-                    --- div
-                    --- article_2_1:
-                        ---- img 
-                        ---- h2 nom
-                        ---- p ss titre
-                    --- textarea
-                    --- end div
-                    -----------------------
-                    --- div
-                    --- article_2_2:
-                        ---- img 
-                        ---- h2 nom
-                        ---- p ss titre
-                    --- textarea
-                    --- end div
-                      
-                    => composant idem sur deux ss articles
-            - Section 4:
-                -- Article
-                    --- h3/p text align center
-                    --- h2 text align center
-                -- Article 
-                    --- div
-                        ---- h2
-                        ---- list witj stylized buttons (img) sdmostsd + p x5
-                    --- end div
-                        ---- img (droite puis gauche selon les deux instnces)
-                    --- img margin 2 colonnes (une vide)(gauche puis droite)
-            - Section 5:
-                -- 2 col
-                -- Artciel 1:
-                    --- p
-                    --- h2
-                    --- p 
-                    =)> align center
-                -- Arcitle 2:  
-                    --- FORM
-                        ---- L1: Deux boutons same siez en col
-                        ---- 2 lignes equivalentes avec placeholder
-                        ---- dropdown men avec 5 items
-                        ---- textarea 
-                        ---- checkbox
-                        --- submit button
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/03_LP_ALC_Projects/02/09_Skillfacile_28012024/css/style.css">
+        <title>Skillfacile</title>
+    </head>
+    <body>
+        <header>
+            <a href="/"><img src="/03_LP_ALC_Projects/02/09_Skillfacile_28012024/images/logo-noir.webp" href="/"></a>
+            <nav>
+                <ul>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="#">Accompagnements</a></li>
+                    <!--    <div class="">
 
-                        /!\ remember d'encapsuler dans les labels ou vice versa pour par galérer.
-        -->
-        <a href="#" class="btn">Some Link</a>
-    </main>
-    <footer>
-        <!-- 
-            - Part One: 
-                -- background: color : mauve
-                -- Liste 4 col
-                    --- h2/h3 + p
-                    --- h2/h3 + liste 6 items
-                    --- idem mais 4 items
-                    --- idem mais 5 items
-            - Part Two: 
-                -- fond blanc
-                -- p avec (C) et liens mentions légaless, survol en rouge de la charte  
-        -->
-    </footer>
-</body>
-</html>
+                            <div class="dropdown">
+                                <button></button>
+                                <div class="dropdown-content">
+                                    
+                        <ul>
+                            <li><a href="#">Accompagnement perso</a></li>
+                            <li><button class="drop-dwn"><a href="#">Accompagnement small group</a></button></li>
+                            <li><a href="#">Coaching digital</a></li>
+                            <li><a href="#">Formations digitales</a></li>
+                        </ul>
+
+                    </div>
+                        </div> -->
+                    <li><a href="#">Contact & Inscription</a></li>
+                    <li><a href="#">E-learning</a></li>
+                    <li><a href="#">Témoignages</a></li>
+                </ul>
+            </nav>
+            <!-- 
+                - Lste 2col:
+                    OK -- Logo
+                    -- Menu nav 5col 
+                        --- nth:child 4 rouge item de la liste , vert si activé/survol
+                        --- Item 2 = dropdown menu
+            -->
+        </header>
+        <main>
+            <!-- 
+                - Section 1:
+                    -- 2 col
+                    -- 1 col = 
+                        --- h1 titre + sous tire DESSUS avec font
+                        --- p
+                        --- liste col x2 avec bouttons stylisé (class)
+                - Section 2:
+                    -- List x2 col:
+                        --- Composant: x2  col
+                            ---- img align/jsutify center
+                            ---- h2/h3 + p
+                        --- x4 reparti en 2col repeat 1fr
+                    -- Boutton Contact stylisé class btn align ce ter (margin ? amargin auto)
+                - Section 3:
+                    -- Article 1: text align center on all article
+                        --- p or h3
+                        --- h2
+                        --- p
+                    -- Article 2: x2 colo grid align
+                        --- div
+                        --- article_2_1:
+                            ---- img 
+                            ---- h2 nom
+                            ---- p ss titre
+                        --- textarea
+                        --- end div
+                        -----------------------
+                        --- div
+                        --- article_2_2:
+                            ---- img 
+                            ---- h2 nom
+                            ---- p ss titre
+                        --- textarea
+                        --- end div
+                        
+                        => composant idem sur deux ss articles
+                - Section 4:
+                    -- Article
+                        --- h3/p text align center
+                        --- h2 text align center
+                    -- Article 
+                        --- div
+                            ---- h2
+                            ---- list witj stylized buttons (img) sdmostsd + p x5
+                        --- end div
+                            ---- img (droite puis gauche selon les deux instnces)
+                        --- img margin 2 colonnes (une vide)(gauche puis droite)
+                - Section 5:
+                    -- 2 col
+                    -- Artciel 1:
+                        --- p
+                        --- h2
+                        --- p 
+                        =)> align center
+                    -- Arcitle 2:  
+                        --- FORM
+                            ---- L1: Deux boutons same siez en col
+                            ---- 2 lignes equivalentes avec placeholder
+                            ---- dropdown men avec 5 items
+                            ---- textarea 
+                            ---- checkbox
+                            --- submit button
+
+                            /!\ remember d'encapsuler dans les labels ou vice versa pour par galérer.
+            -->
+            <a href="#" class="btn">Some Link</a>
+        </main>
+        <footer>
+        <section> 
+                <article>
+                <ul>
+                    <li>
+                        <h2>A propos</h2>
+                        <p>SkillFacile est un collectif d’indépendants dans les métiers du web et de la communication digitale. Dans le domaine depuis plus de 7 ans, nous avons à notre actif plus d’une centaine de projets et des centaines d’étudiants formés et accompagnés.</p>
+                    </li>
+                </ul>
+                </article>
+                <article>
+                <ul>
+                    <h2>Nos services</h2>
+                    <ul>
+                        <li><a href="/">Accompagnements</a></li>
+                        <li><a href="/">Accompagnement perso</a></li>
+                        <li><a href="/">Accompagnement small group</a></li>
+                        <li><a href="/">Coaching digital</a></li>
+                        <li><a href="/">Formations digitales</a></li>
+                        <li><a href="/">E-learning/a></li>
+                </ul>
+            </article>
+            <article>
+                <h2>Liens utiles</h2>
+                    <ul>
+                        <li><a href="#">Tableau de bord</a></li>
+                        <li><a href="#">Mon compte</a></li>
+                        <li><a href="#">Panier</a></li>
+                        <li><a href="#">Conditions générales de vente</a></li>
+                    </ul>
+            </article>
+            <article>
+                <h2>Equipe et partnaires.</h2>
+                    <li><a href="">StoryCom</a></li>
+                    <li><a href="">Errante Vincent</a></li>
+                    <li><a href="">Errante Création</a></li>
+                    <li><a href="">BurstLink</a></li>
+                    <li><a href="">Coach Ton Projet</a></li>
+            </article>
+        </section>
+            <!-- 
+                - Part One: 
+                    -- background: color : mauve
+                    -- Liste 4 col
+                        --- h2/h3 + p
+                        --- h2/h3 + liste 6 items
+                        --- idem mais 4 items
+                        --- idem mais 5 items
+                - Part Two: 
+                    -- fond blanc
+                    -- p avec (C) et liens mentions légaless, survol en rouge de la charte  
+            -->
+        </footer>
+    </body>
+    </html>
