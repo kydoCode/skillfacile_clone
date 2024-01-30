@@ -30,18 +30,39 @@ a {
 
 }
 
+/* -- Components */
+
+.btn {
+    background-color: var(--seafoam-green);
+    font-family: var(--font-Open-Sans);
+    color:var(--white-color);
+    font-size: 16px;
+    font-weight: 600;
+    fill: var(--white-color);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 13px 30px;
+}
+
+.btn:hover {
+    color:var(--seafoam-green);
+    background-color: var(--white-color);
+    fill:var(--seafoam-green);
+}
+
 /* HEADER */
 
 header{
     max-width: 1440px;
-    margin:auto;
+    margin:60px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding:0 15px;
 }
 
-header ul{
+nav> ul{
     list-style: none;
     display: flex;
     gap: 20px;
@@ -79,4 +100,18 @@ header nav ul li:nth-child(1) a:nth-child(1):hover {
 header nav ul li:nth-child(4) a:nth-child(1):hover {
     color:var(--seafoam-green);
     transition: all 0.2s;
+}
+
+
+#submenu{
+    display: none;
+}
+
+header nav ul li:nth-child(2):hover #submenu{
+    display: grid;
+    background-color: #fff;
+    padding: 20px 10px;
+    gap: 20px;
+    position: absolute;
+    list-style-type: none;
 }
