@@ -4,6 +4,8 @@
 /* -- Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 
 /* Global CSS settings */
@@ -12,8 +14,21 @@
     margin:0;
 }
 
-a {
+h1 {
+    font-family: var(--font-Oswald);
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--magenta-desk);
+}
+
+a, a>a {
     text-decoration: none;
+    color:var(--black-color);
+}
+
+ul, ul>ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 /* -- Root CSS variables */ 
 
@@ -27,7 +42,8 @@ a {
     --highlight-red:#E34E67;
     /* fonts */
     --font-Open-Sans: 'Open Sans', sans-serif;
-
+    --font-Oswald: 'Oswald', sans-serif;
+    --font-Pacifico: 'Pacifico', cursive;
 }
 
 /* -- Components */
@@ -62,7 +78,7 @@ header{
     padding:0 15px;
 }
 
-nav> ul{
+header>nav>ul{
     list-style: none;
     display: flex;
     gap: 20px;
@@ -72,11 +88,12 @@ header img{
     width:200px;
 }
 
-header a{
+header a, header>nav>ul>li:nth-child(2)>ul>li>a {
     font-family: var(--font-Open-Sans);
+    color:var(--magenta-desk);
     font-weight: 600;
     font-size: 16px;
-    transition: all 0.2s;
+    transition: all 0.2s; 
 }
 
 header a:hover{
@@ -105,7 +122,13 @@ header nav ul li:nth-child(4) a:nth-child(1):hover {
 header nav ul li:nth-child(2)>#submenu a {
     color:var(--black-color);
     font-size: 12px;
+    transition: all 0.2s;
 } 
+
+header nav ul li:nth-child(2)>#submenu a:hover{
+    opacity: 0.6;
+    transition:all 0.2s;
+}
 
 
 #submenu{
@@ -120,3 +143,124 @@ header nav ul li:nth-child(2):hover #submenu{
     position: absolute;
     list-style-type: none;
 }
+
+/* id="down-arrow" 
+#down-arrow{
+    vertical-align: middle;
+} */
+
+/* MAIN */
+
+main section:nth-child(1) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+p {
+    font-family: var(--font-Open-Sans);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--background-blue);
+    max-width: 1440px;
+    margin:auto;
+    color:var(--white-color);
+    font-family: var(--font-Open-Sans);
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: space-between;
+    padding: 40px 20px;
+    align-items: center;
+}
+
+
+/*
+footer>section:nth-child(1) {
+}
+*/
+
+footer a{
+    color:var(--white-color);
+    transition: all 0.2s;
+}
+
+footer a:hover{
+    color:var(--seafoam-green);
+    transition: all 0.2s;
+}
+
+footer>section:nth-child(1){
+    display: grid;
+    background-color: var(--background-blue);
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+}
+
+/* footer>section>article{
+    gap: 20px;
+} */
+
+footer>section:nth-child(1)>article>h2{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-family: var(--font-Oswald);
+}
+
+footer>section:nth-child(1) ul li{
+    padding: 8px 0px;
+}
+
+footer>section:nth-child(2) {
+   /* background-color: var(--white-color);
+    width: 1440px;
+    margin: auto; */
+    text-align: center;
+    color:var(--magenta-desk);
+    padding: 20px 0px;
+    font-family: var(--font-Open-Sans);
+    font-weight: 100;
+}
+
+footer>section:nth-child(2) a{
+    color:var(--magenta-desk);
+}
+
+footer>section:nth-child(2) a:hover{
+    color:var(--highlight-red);
+}
+
+/* 
+footer {
+    max-width: 1440px;
+    margin:auto;
+    justify-content: space-between;
+    background-color: var(--background-blue);
+    color:var(--white-color);
+    align-items: center;
+    padding: 20px 20px;
+    font-family: var(--font-Open-Sans);
+}
+
+footer>section {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    /* width: 160px; */
+/* }
+
+footer>section>article>h2{
+    padding-bottom: 20px;
+}
+
+footer>section>article {
+    width: 160px;
+    margin: auto;
+    text-align: left;
+}
+*/
+
+/* footer>ul>li {
+    margin: 25px 0px;
+} */
